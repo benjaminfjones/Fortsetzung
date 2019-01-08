@@ -1,6 +1,20 @@
 {-# LANGUAGE InstanceSigs #-}
 
-module Kont where
+module SAT
+  (
+    -- * Problem specification
+    Expr
+
+    -- * SAT solver
+  , runSat
+
+    -- * Examples
+  , p1
+  , p2
+  , p3
+  , p4
+  )
+where
 
 import Control.Monad (when)
 import Control.Monad.Trans.Class
